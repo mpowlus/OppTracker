@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Calculate/recalculate the duration if the end date changes</description>
+        <field>end_date</field>
+        <global>true</global>
+        <messages/>
+        <name>Calculate duration new end date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+var sdv = g_form.getValue('start_date'); // start date field  
+//jslog("Start date is " + sdv);
+var edv = g_form.getValue('end_date'); //end date field  
+//jslog("End date is " + edv);
+//alert("You changed the end date!")  ;
+var ajax = new GlideAjax('global.ClientDateTimeUtils');  
+ajax.addParam('sysparm_name','getDateDiff');  
+ajax.addParam('sysparm_fdv', sdv);  
+ajax.addParam('sysparm_sdv', edv);  
+ajax.getXML(doSomething);  
+  
+function doSomething(response){  
+  var answer = response.responseXML.documentElement.getAttribute("answer");  
+  g_form.setValue('duration',answer);
+  var durMS = g_form.getValue('duration');
+  var daySplit = answer.split(" ");
+  var weeks = Number(daySplit[0]) / 7;
+  weeks = Math.round(weeks);
+	g_form.setValue('weeks',weeks);
+  //alert("Duration weeks is " + weeks);
+  }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mercury.powlus</sys_created_by>
+        <sys_created_on>2017-07-24 19:54:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eced87934f0403003e5c33718110c7d4</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Calculate duration new end date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="OppTracker" source="x_62820_opptracker">f0a6b00b4f0803003e5c33718110c704</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="OppTracker">f0a6b00b4f0803003e5c33718110c704</sys_scope>
+        <sys_update_name>sys_script_client_eced87934f0403003e5c33718110c7d4</sys_update_name>
+        <sys_updated_by>mercury.powlus</sys_updated_by>
+        <sys_updated_on>2017-07-25 14:52:01</sys_updated_on>
+        <table>x_62820_opptracker_opportunity</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

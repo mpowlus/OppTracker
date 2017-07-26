@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Opportunity" max_length="40" name="x_62820_opptracker_opportunity" type="collection">
+        <element label="Account" max_length="50" name="account" type="string"/>
+        <element label="Duration" max_length="40" name="duration" type="glide_duration"/>
+        <element label="Duration in days" max_length="6" name="duration_in_days" type="integer"/>
+        <element label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Opportunity name" mandatory="true" max_length="75" name="opportunity_name" type="string"/>
+        <element choice="3" default="No" label="Overhead" max_length="40" name="overhead" type="choice">
+            <choice>
+                <element label="No" sequence="100" value="No"/>
+                <element label="Yes" sequence="200" value="Yes"/>
+            </choice>
+        </element>
+        <element label="SFDC number" max_length="10" name="sfdc_number" type="string"/>
+        <element choice="1" label="Stage" max_length="10" name="stage" type="choice">
+            <choice>
+                <element label="Interest" sequence="100" value="interest"/>
+                <element label="Qualifying" sequence="200" value="qualifying"/>
+                <element label="Pursue" sequence="300" value="pursue"/>
+                <element label="Bid" sequence="400" value="bid"/>
+                <element label="Negotiation" sequence="500" value="negotiation"/>
+                <element label="Closed won" sequence="600" value="closed_won"/>
+                <element label="N/A" sequence="700" value="na"/>
+            </choice>
+        </element>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Third allocation" max_length="15" name="third_allocation" type="decimal"/>
+        <element label="Third resource" max_length="32" name="third_resource" reference="sys_user" type="reference"/>
+        <element label="Weeks" max_length="40" name="weeks" read_only="true" type="integer"/>
+        <index name="index">
+            <element name="third_resource"/>
+        </index>
+    </element>
+</database>
