@@ -49,7 +49,7 @@
         <sys_created_on>2017-07-25 17:48:01</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>534fbf274fc003003e5c33718110c74d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Opportunity name</sys_name>
         <sys_package display_value="OppTracker" source="x_62820_opptracker">f0a6b00b4f0803003e5c33718110c704</sys_package>
         <sys_policy/>
@@ -57,7 +57,7 @@
         <sys_scope display_value="OppTracker">f0a6b00b4f0803003e5c33718110c704</sys_scope>
         <sys_update_name>sys_dictionary_x_62820_opptracker_opportunity_allocations_u_opportunity_name</sys_update_name>
         <sys_updated_by>mercury.powlus</sys_updated_by>
-        <sys_updated_on>2017-07-25 17:48:01</sys_updated_on>
+        <sys_updated_on>2017-07-29 13:30:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

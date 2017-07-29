@@ -5,69 +5,97 @@
             <element>u_opportunity_name</element>
             <position>0</position>
             <sys_created_by>mercury.powlus</sys_created_by>
-            <sys_created_on>2017-07-25 18:27:34</sys_created_on>
-            <sys_id>7a58887b4fc003003e5c33718110c73c</sys_id>
+            <sys_created_on>2017-07-28 21:12:23</sys_created_on>
+            <sys_id>52da48304f1483003e5c33718110c743</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Opportunity Allocations" display_value="Opportunity Allocations" name="x_62820_opptracker_opportunity_allocations" sys_domain="global" view="Default view">c309f7234fc003003e5c33718110c79b</sys_ui_section>
             <sys_updated_by>mercury.powlus</sys_updated_by>
-            <sys_updated_on>2017-07-25 18:27:34</sys_updated_on>
+            <sys_updated_on>2017-07-28 21:12:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <position>1</position>
+            <sys_created_by>mercury.powlus</sys_created_by>
+            <sys_created_on>2017-07-28 21:12:23</sys_created_on>
+            <sys_id>1ada48304f1483003e5c33718110c743</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opportunity Allocations" display_value="Opportunity Allocations" name="x_62820_opptracker_opportunity_allocations" sys_domain="global" view="Default view">c309f7234fc003003e5c33718110c79b</sys_ui_section>
+            <sys_updated_by>mercury.powlus</sys_updated_by>
+            <sys_updated_on>2017-07-28 21:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>allocation</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>mercury.powlus</sys_created_by>
-            <sys_created_on>2017-07-25 18:27:34</sys_created_on>
-            <sys_id>fa58887b4fc003003e5c33718110c73c</sys_id>
+            <sys_created_on>2017-07-28 21:12:23</sys_created_on>
+            <sys_id>9ada48304f1483003e5c33718110c743</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Opportunity Allocations" display_value="Opportunity Allocations" name="x_62820_opptracker_opportunity_allocations" sys_domain="global" view="Default view">c309f7234fc003003e5c33718110c79b</sys_ui_section>
             <sys_updated_by>mercury.powlus</sys_updated_by>
-            <sys_updated_on>2017-07-25 18:27:34</sys_updated_on>
+            <sys_updated_on>2017-07-28 21:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>mercury.powlus</sys_created_by>
-            <sys_created_on>2017-07-25 18:27:34</sys_created_on>
-            <sys_id>7e58887b4fc003003e5c33718110c73c</sys_id>
+            <sys_created_on>2017-07-28 21:12:23</sys_created_on>
+            <sys_id>1eda48304f1483003e5c33718110c743</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Opportunity Allocations" display_value="Opportunity Allocations" name="x_62820_opptracker_opportunity_allocations" sys_domain="global" view="Default view">c309f7234fc003003e5c33718110c79b</sys_ui_section>
             <sys_updated_by>mercury.powlus</sys_updated_by>
-            <sys_updated_on>2017-07-25 18:27:34</sys_updated_on>
+            <sys_updated_on>2017-07-28 21:12:23</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_resource</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>mercury.powlus</sys_created_by>
-            <sys_created_on>2017-07-25 18:27:34</sys_created_on>
-            <sys_id>fe58887b4fc003003e5c33718110c73c</sys_id>
+            <sys_created_on>2017-07-28 21:12:23</sys_created_on>
+            <sys_id>9eda48304f1483003e5c33718110c743</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Opportunity Allocations" display_value="Opportunity Allocations" name="x_62820_opptracker_opportunity_allocations" sys_domain="global" view="Default view">c309f7234fc003003e5c33718110c79b</sys_ui_section>
             <sys_updated_by>mercury.powlus</sys_updated_by>
-            <sys_updated_on>2017-07-25 18:27:34</sys_updated_on>
+            <sys_updated_on>2017-07-28 21:12:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_date</element>
+            <position>5</position>
+            <sys_created_by>mercury.powlus</sys_created_by>
+            <sys_created_on>2017-07-28 21:12:23</sys_created_on>
+            <sys_id>12da48304f1483003e5c33718110c744</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Opportunity Allocations" display_value="Opportunity Allocations" name="x_62820_opptracker_opportunity_allocations" sys_domain="global" view="Default view">c309f7234fc003003e5c33718110c79b</sys_ui_section>
+            <sys_updated_by>mercury.powlus</sys_updated_by>
+            <sys_updated_on>2017-07-28 21:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_calendar</element>
-            <position>4</position>
+            <position>6</position>
             <sys_created_by>mercury.powlus</sys_created_by>
-            <sys_created_on>2017-07-25 18:27:34</sys_created_on>
-            <sys_id>7258887b4fc003003e5c33718110c73d</sys_id>
+            <sys_created_on>2017-07-28 21:12:23</sys_created_on>
+            <sys_id>92da48304f1483003e5c33718110c744</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Opportunity Allocations" display_value="Opportunity Allocations" name="x_62820_opptracker_opportunity_allocations" sys_domain="global" view="Default view">c309f7234fc003003e5c33718110c79b</sys_ui_section>
             <sys_updated_by>mercury.powlus</sys_updated_by>
-            <sys_updated_on>2017-07-25 18:27:34</sys_updated_on>
+            <sys_updated_on>2017-07-28 21:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

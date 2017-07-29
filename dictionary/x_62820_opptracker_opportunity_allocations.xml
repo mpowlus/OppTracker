@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Opportunity Allocations" max_length="40" name="x_62820_opptracker_opportunity_allocations" type="collection">
-        <element label="Allocation" max_length="15" name="allocation" type="decimal"/>
+        <element label="FTE" max_length="15" name="allocation" type="decimal"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
         <element label="Resource" max_length="32" name="resource" reference="sys_user" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
         <element default="090eecae0a0a0b260077e1dfa71da828" label="Calendar" max_length="32" name="u_calendar" reference="cmn_schedule" type="reference"/>
         <element label="Opportunity name" max_length="32" name="u_opportunity_name" reference="x_62820_opptracker_opportunity" type="reference"/>
         <element label="Resource" max_length="32" name="u_resource" reference="sys_user" type="reference"/>

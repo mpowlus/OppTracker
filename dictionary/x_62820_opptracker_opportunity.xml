@@ -5,7 +5,7 @@
         <element label="Duration" max_length="40" name="duration" type="glide_duration"/>
         <element label="Duration in days" max_length="6" name="duration_in_days" type="integer"/>
         <element label="End date" max_length="40" name="end_date" type="glide_date"/>
-        <element label="Opportunity name" mandatory="true" max_length="75" name="opportunity_name" type="string"/>
+        <element display="true" label="Opportunity name" mandatory="true" max_length="75" name="opportunity_name" type="string"/>
         <element choice="3" default="No" label="Overhead" max_length="40" name="overhead" type="choice">
             <choice>
                 <element label="No" sequence="100" value="No"/>
@@ -25,11 +25,9 @@
             </choice>
         </element>
         <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
-        <element label="Third allocation" max_length="15" name="third_allocation" type="decimal"/>
-        <element label="Third resource" max_length="32" name="third_resource" reference="sys_user" type="reference"/>
         <element label="Weeks" max_length="40" name="weeks" read_only="true" type="integer"/>
         <index name="index">
-            <element name="third_resource"/>
+            <element name="sfdc_number"/>
         </index>
     </element>
 </database>
