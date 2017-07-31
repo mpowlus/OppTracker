@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Allocation start date too early</name>
+        <name>Allocation end date too late</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,36 +31,34 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	var sdta = new GlideDateTime(current.start_date + " 00:00:00");
-	var sdto = new GlideDateTime(current.u_opportunity_name.start_date + " 00:00:00");
-	// gs.addInfoMessage(sdta);
-	// gs.addInfoMessage(sdto);
-	if(sdta.before(sdto)){
-			gs.addErrorMessage("Allocation start date cannot be earlier thatn Opportunity start date, which is "+ current.u_opportunity_name.start_date + "! Record changes were not saved.");
+	var edta = new GlideDateTime(current.end_date + " 00:00:00");
+	var edto = new GlideDateTime(current.u_opportunity_name.end_date + " 00:00:00");
+	// gs.addInfoMessage(edta);
+	// gs.addInfoMessage(edto);
+	if(edto.before(edta)){
+			gs.addErrorMessage("Allocation end date cannot be later thatn Opportunity end date, which is "+ current.u_opportunity_name.end_date + "! Record changes were not saved.");
 		current.setAbortAction(true);
 	}
-	
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mercury.powlus</sys_created_by>
-        <sys_created_on>2017-07-29 22:23:48</sys_created_on>
+        <sys_created_on>2017-07-30 14:03:49</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0fc3edc54f9c83003e5c33718110c7a1</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_name>Allocation start date too early</sys_name>
+        <sys_id>edcbf8114f54c3003e5c33718110c7e3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Allocation end date too late</sys_name>
         <sys_overrides/>
         <sys_package display_value="OppTracker" source="x_62820_opptracker">f0a6b00b4f0803003e5c33718110c704</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="OppTracker">f0a6b00b4f0803003e5c33718110c704</sys_scope>
-        <sys_update_name>sys_script_0fc3edc54f9c83003e5c33718110c7a1</sys_update_name>
+        <sys_update_name>sys_script_edcbf8114f54c3003e5c33718110c7e3</sys_update_name>
         <sys_updated_by>mercury.powlus</sys_updated_by>
-        <sys_updated_on>2017-07-30 14:01:19</sys_updated_on>
+        <sys_updated_on>2017-07-30 14:26:48</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=0fc3edc54f9c83003e5c33718110c7a1"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=edcbf8114f54c3003e5c33718110c7e3"/>
 </record_update>
